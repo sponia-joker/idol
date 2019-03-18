@@ -1,7 +1,10 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/flowerGod/flowerGod",
+    "pages/guild/guild",
+    "pages/personCenter/personCenter",
+    "pages/launch/launch"
   ],
   "window":{
     "backgroundTextStyle":"light",
