@@ -1,22 +1,128 @@
 <view class='ranking'>
-  <view class='tab-title'>
+  <view class='navbar'>
+    <view class='tab-title'>
     <view class='tab-title-item tab-title-lastweek'>上周</view>
     <view class='tab-title-item tab-title-week tab-title-default'>本周</view>
     <view class='tab-title-item tab-title-lastmonth'>上月</view>
     <view class='tab-title-item tab-title-month'>本月</view>
   </view>
   <view class='tab-search'>
-    <icon class="tab-search-icon" size='20' type='search'></icon>
+    <image src='/images/search-glyph.png' class='tab-search-icon'></image>
     <input name="input" placeholder-class="place-holder" class="tab-search-input" focus="{{false}}" value="{{searchValue}}" confirm-type="search" bindinput="inputChange" bindfocus="inputFocus" bindconfirm="onKeywordConfirm" placeholder="请输入您喜欢的明星名字" />
   </view>
   <view class='count-down'>
     <view class=' count-down-time'>本期倒计时：02天12:12:12</view>
     <navigator class='count-down-rules' url="/pages/rules/rules">榜单规则</navigator>
   </view>
-  <view class='tab-content'>
-    <view class='tab-content-lastweek'>上周内容</view>
-    <view class='tab-content-week tab-title-default'>本周内容</view>
-    <view class='tab-content-lastmonth'>上月内容</view>
-    <view class='tab-content-month'>本月内容</view>
   </view>
+  <scroll-view class='tab-content' style="height:{{scrollHeight}}px;" scroll-y>
+    <view class='before-third'>
+      <view class='third-rank'>
+        <view class='person-third'>
+          <view class='person-logo'>
+            <image src='/images/person_one.png'></image>
+            <view style='background:#E7E5E4;color:#19181F;'>2</view>
+          </view>
+          <view class='person-name'>朱一龙</view>
+        </view>
+        <image src='/images/rank_bg_2.png' style='width:218rpx;height:178rpx'></image>
+      </view>
+      <view class='first-rank'>
+        <view class='person-first'>
+          <view class='person-logo'>
+            <image src='/images/person_two.png'></image>
+            <view style='background:#FAB9AB;color:#19181F;'>1</view>
+          </view>
+          <view class='person-name'>朱一龙</view>
+        </view>
+        <image src='/images/rank_bg_1.png' style='width:262rpx;height:218rpx'></image>
+      </view>
+      <view class='second-rank'>
+        <view class='person-second'>
+          <view class='person-logo'>
+            <image src='/images/person_three.png'></image>
+            <view style='background:#DDA84A;color:#fff'>3</view>
+          </view>
+          <view class='person-name'>朱一龙</view>
+        </view>
+        <image src='/images/rank_bg_3.png' style='width:220rpx;height:150rpx'></image>
+      </view>
+    </view>
+    <view class='after-third'>
+      <view class='after-third-item'>
+        <view class='item-left'>
+          <view class='item-index'>4</view>
+          <image src='/images/person_one.png'></image>
+          <view class='person-name-flower'>
+            <view class='person-name'>朱一龙</view>
+            <view class='person-flower'>187992866</view>
+            <image class='flower-icon' src='/images/flower.png'></image>
+          </view>
+        </view>
+        <view class='item-right'>
+          打榜
+        </view>
+      </view>
+       <view class='after-third-item'>
+        <view class='item-left'>
+          <view class='item-index'>5</view>
+          <image src='/images/person_two.png'></image>
+          <view class='person-name-flower'>
+            <view class='person-name'>朱一龙</view>
+            <view class='person-flower'>187992866</view>
+            <image class='flower-icon' src='/images/flower.png'></image>
+          </view>
+        </view>
+        <view class='item-right'>
+          打榜
+        </view>
+      </view>
+       <view class='after-third-item'>
+        <view class='item-left'>
+          <view class='item-index'>6</view>
+          <image src='/images/person_three.png'></image>
+          <view class='person-name-flower'>
+            <view class='person-name'>朱一龙</view>
+            <view class='person-flower'>187992866</view>
+            <image class='flower-icon' src='/images/flower.png'></image>
+          </view>
+        </view>
+        <view class='item-right'>
+          打榜
+        </view>
+      </view>
+       <view class='after-third-item'>
+        <view class='item-left'>
+          <view class='item-index'>7</view>
+          <image src='/images/person_one.png'></image>
+          <view class='person-name-flower'>
+            <view class='person-name'>朱一龙</view>
+            <view class='person-flower'>187992866</view>
+            <image class='flower-icon' src='/images/flower.png'></image>
+          </view>
+        </view>
+        <view class='item-right'>
+          打榜
+        </view>
+      </view>
+       <view class='after-third-item'>
+        <view class='item-left'>
+          <view class='item-index'>8</view>
+          <image src='/images/person_two.png'></image>
+          <view class='person-name-flower'>
+            <view class='person-name'>朱一龙</view>
+            <view class='person-flower'>187992866</view>
+            <image class='flower-icon' src='/images/flower.png'></image>
+          </view>
+        </view>
+        <view class='item-right'>
+          打榜
+        </view>
+      </view>
+    </view>
+    <!-- <view class='tab-content-lastweek'></view> -->
+    <!-- <view class='tab-content-week tab-title-default'>本周内容</view>
+    <view class='tab-content-lastmonth'>上月内容</view> -->
+    <!-- <view class='tab-content-month'>本月内容</view> -->
+  </scroll-view>
 </view>

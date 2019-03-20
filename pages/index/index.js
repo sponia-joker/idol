@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    scrollHeight: 0,
     searchValue: '',
     searchStatus: true,
     idolsList: []
@@ -30,32 +31,20 @@ Page({
     // })
   },
   onLoad: function() {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
+    var that = this
+    wx.getSystemInfo({
+      success: function(res) {
+        console.info(res.windowHeight);
+        let height = res.windowHeight;
+        wx.createSelectorQuery().selectAll('.tab-content').boundingClientRect(function(rects) {
+          rects.forEach(function(rect) {
+            that.setData({
+              scrollHeight: res.windowHeight - rect.bottom
+            });
           })
-        }
-      })
-    }
+        }).exec();
+      }
+    });
   },
   getUserInfo: function(e) {
     console.log(e)

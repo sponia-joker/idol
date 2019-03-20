@@ -58,10 +58,140 @@
   width: 700rpx;
   justify-content: space-between;
   padding-top: 30rpx;
+  padding-bottom: 40rpx;
 }
 
 .count-down-time, .count-down-rules {
   font-size: 14px;
   color: #fab9ab;
-  letter-spacing: -0.41px;
+}
+
+.tab-content {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.before-third {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.third-rank image, .second-rank image, .first-rank image {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+
+.third-rank, .second-rank, .first-rank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-first image, .person-second image, .person-third image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  border: 6rpx solid #e7e5e4;
+}
+
+.person-first image {
+  border: 6rpx solid #fab9ab;
+}
+
+.person-third image {
+  border: 6rpx solid #dda84a;
+}
+
+.person-logo {
+  position: relative;
+}
+
+.before-third .person-name {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  margin-top: 48rpx;
+  margin-bottom: 40rpx;
+}
+
+.person-logo view {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 50%;
+  font-size: 28rpx;
+  text-align: center;
+  left: 40rpx;
+  bottom: -26rpx;
+}
+
+.item-left > image {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  border: 3px solid #fab9ab;
+  margin-left: 40rpx;
+}
+
+.after-third {
+  width: 100%;
+}
+
+.person-name-flower {
+  margin-left: 40rpx;
+  position: relative;
+}
+
+.after-third .person-name {
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.after-third .person-flower {
+  font-size: 28rpx;
+  color: #fab9ab;
+}
+
+.after-third .flower-icon {
+  position: absolute;
+  width: 23rpx;
+  height: 23rpx;
+  right: -34rpx;
+  bottom: 8rpx;
+}
+
+.after-third-item {
+  height: 128rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2rpx solid rgba(250, 185, 171, 0.15);
+  padding: 0 26rpx;
+}
+
+.item-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item-left .item-index {
+  font-size: 14px;
+  color: #fab9ab;
+  text-align: center;
+}
+
+.item-right {
+  background: #fab9ab;
+  border-radius: 30rpx;
+  font-size: 28rpx;
+  color: #332c34;
+  padding: 10rpx 60rpx;
+  text-align: center;
 }
