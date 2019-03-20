@@ -1,15 +1,47 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/flowerGod/flowerGod",
-    "pages/guild/guild",
     "pages/personCenter/personCenter",
+    "pages/guild/guild",
+    "pages/rules/rules",
     "pages/launch/launch"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#19181F",
+    "navigationBarTitleText": "偶像榜中榜",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color":"#FAB9AB",
+    "selectedColor":"#FAB9AB",
+    "backgroundColor":"#010101",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar_rank_icon.png",
+        "selectedIconPath": "images/tabbar_rank_icon_on.png",
+        "text": "榜单"
+      },
+      {
+        "pagePath": "pages/flowerGod/flowerGod",
+        "iconPath": "images/tabbar_flower_god_icon.png",
+        "selectedIconPath": "images/tabbar_flower_god_icon_on.png",
+        "text": "花神"
+      },
+      {
+        "pagePath": "pages/guild/guild",
+        "iconPath": "images/tabbar_guild_icon.png",
+        "selectedIconPath": "images/tabbar_guild_icon_on.png",
+        "text": "我的公会"
+      },
+      {
+        "pagePath": "pages/personCenter/personCenter",
+        "iconPath": "images/tabbar_person_center_icon.png",
+        "selectedIconPath": "images/tabbar_person_center_icon_on.png",
+        "text": "个人中心"
+      }
+    ]
   }
 }

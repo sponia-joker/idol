@@ -1,21 +1,67 @@
 /**index.wxss**/
-.userinfo {
+
+.ranking {
+  background-color: #2d252f;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.tab-title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 30rpx 108rpx 50rpx;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.tab-title .tab-title-item {
+  font-size: 32rpx;
+  color: rgba(250, 185, 171, 0.40);
+  text-align: center;
 }
 
-.usermotto {
-  margin-top: 200px;
+.tab-search {
+  width: 700rpx;
+  height: 80rpx;
+  border: 1px solid #fab9ab;
+  border-radius: 6px;
+  position: relative;
+}
+
+.place-holder {
+  color: rgba(250, 185, 171, 0.40);
+}
+
+.tab-search-icon {
+  position: absolute;
+  color: #fab9ab;
+  top: 20rpx;
+  left: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.tab-search-input {
+  position: absolute;
+  font-size: 28rpx;
+  color: rgba(250, 185, 171, 0.40);
+  left: 80rpx;
+  top: 0rpx;
+  width: 610rpx;
+  height: 80rpx;
+}
+
+.count-down {
+  display: flex;
+  flex-direction: row;
+  width: 700rpx;
+  justify-content: space-between;
+  padding-top: 30rpx;
+}
+
+.count-down-time, .count-down-rules {
+  font-size: 14px;
+  color: #fab9ab;
+  letter-spacing: -0.41px;
 }
