@@ -1,15 +1,10 @@
-// pages/personCenter/personCenter.js
+// pages/payment/payment.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
-  },
-
-  updateUsername: function () {
-    
 
   },
 

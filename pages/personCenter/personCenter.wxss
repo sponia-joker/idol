@@ -121,7 +121,7 @@
   color: rgba(250, 185, 171, 1);
   line-height: 20px;
   width: 640rpx;
-  height: 90rpx;
+  height: 100rpx;
   border-bottom: 2rpx solid rgba(250, 185, 171, 0.2);
 }
 

@@ -1,0 +1,50 @@
+<view class='container'>
+  <view class='payment-item'>
+    <view class='payment-flower-number'>
+      <image src='/images/flower_icon.png'></image>
+      <view>1000</view>
+    </view>
+    <text class='payment-sends'>送</text>
+    <image src='/images/trumpet_light_icon.png'></image>
+    <text class='trumpet-number'>x10</text>
+    <text class='payment-price'>¥ 1</text>
+  </view>
+
+
+  <view class='payment-item'>
+    <view class='payment-flower-number'>
+      <image src='/images/flower_icon.png'></image>
+      <view>5000</view>
+    </view>
+    <text class='payment-sends'>送</text>
+    <image src='/images/trumpet_light_icon.png'></image>
+    <text class='trumpet-number'>x50</text>
+    <text class='payment-price'>¥5</text>
+  </view>
+
+
+  <view class='payment-item'>
+    <view class='payment-flower-number'>
+      <image src='/images/flower_icon.png'></image>
+      <view>2万</view>
+    </view>
+    <text class='payment-sends'>送</text>
+    <image src='/images/trumpet_light_icon.png'></image>
+    <text class='trumpet-number'>x200</text>
+    <text class='payment-price'>¥20</text>
+  </view>
+
+
+  <view class='payment-item'>
+    <view class='payment-flower-number'>
+      <image src='/images/flower_icon.png'></image>
+      <view>5万</view>
+    </view>
+    <text class='payment-sends'>送</text>
+    <image src='/images/trumpet_light_icon.png'></image>
+    <text class='trumpet-number'>x500</text>
+    <text class='payment-price'>¥50</text>
+  </view>
+
+
+</view>

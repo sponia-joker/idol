@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/payment/payment",
     "pages/personCenter/personCenter",
     "pages/flowerGod/flowerGod",
     "pages/rules/rules",
-    "pages/index/index",
     "pages/guild/guild",
     "pages/launch/launch"
   ],

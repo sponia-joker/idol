@@ -1,0 +1,66 @@
+.container {
+  background-color: #2d252f;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 14px;
+  color: #19181f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-item {
+  display: flex;
+  width: 700rpx;
+  height: 140rpx;
+  margin-top: 20rpx;
+  background: #19181f;
+  border-radius: 4px;
+  align-items: center;
+  padding: 0 22rpx;
+}
+
+.payment-flower-number {
+  width: 110rpx;
+  height: 110rpx;
+  background: #fab9ab;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-flower-number image {
+  margin-top: 14rpx;
+  margin-bottom: 10rpx;
+}
+
+.payment-sends {
+  font-size: 19px;
+  color: #fab9ab;
+  margin-left: 70rpx;
+  margin-right: 48rpx;
+}
+
+.payment-item  image {
+  width: 32rpx;
+  height: 30rpx;
+}
+
+.trumpet-number {
+  font-size: 34rpx;
+  color: #fab9ab;
+  margin-left: 20rpx;
+}
+
+.payment-price {
+  margin-left: 130rpx;
+  background: #fab9ab;
+  border-radius: 38rpx;
+  width: 160rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #332c34;
+}

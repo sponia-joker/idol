@@ -7,7 +7,7 @@
       </view>
       <view class='profile-name'>
         <text>小姐姐喜欢我</text>
-        <image src='/images/pen_icon.png'></image>
+        <image src='/images/pen_icon.png' bindtap='updateUsername'></image>
       </view>
       <view class='profile-id'>ID:1234567</view>
     </view>
@@ -37,13 +37,13 @@
     </view>
   </view>
   <view class='person-function'>
-    <view class='person-function-item'>
+    <navigator class='person-function-item' url='/pages/payment/payment'>
       <view class='item-left'>
         <image src='/images/car_icon.png'></image>
         <text>获取鲜花</text>
       </view>
       <image src='/images/right_arrow.png' style='width:20rpx;height:34rpx'></image>
-    </view>
+    </navigator>
     <view class='person-function-item'>
       <view class='item-left'>
         <image src='/images/exchange_icon.png'></image>
