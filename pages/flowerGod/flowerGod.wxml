@@ -1,2 +1,4 @@
 <!--pages/flowerGod/flowerGod.wxml-->
-<text>花神模块</text>
+<view class='container'>
+  <image src='/images/flower_god.png'></image>
+</view>

@@ -1,1 +1,29 @@
-/* pages/rules/rules.wxss */
+.container {
+  background-color: #2d252f;
+  overflow:hidden;
+  padding: 0 24rpx 50rpx;
+}
+
+.rules-title-bg {
+  font-size: 28rpx;
+  color: #fab9ab;
+  width: 356rpx;
+  height: 100rpx;
+  line-height: 110rpx;
+  text-align: center;
+  background-image: url(https://i.loli.net/2019/03/21/5c931830ee1d1.png);
+  background-size: cover;
+  margin: 60rpx auto;
+}
+
+.rules-title {
+  font-size: 32rpx;
+  color: #fab9ab;
+  padding: 24rpx 0;
+}
+
+.rules-text {
+  font-size: 14px;
+  color: #998d9a;
+  line-height: 50rpx;
+}

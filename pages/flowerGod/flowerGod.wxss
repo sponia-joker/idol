@@ -1,1 +1,13 @@
 /* pages/flowerGod/flowerGod.wxss */
+.container{
+  background-color: #2D252F;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container image{
+  width: 594rpx;
+  height: 750rpx;
+
+}

@@ -1,6 +1,6 @@
 /**index.wxss**/
 
-.ranking-container {
+.container {
   background-color: #2d252f;
   display: flex;
   flex-direction: column;
@@ -92,6 +92,46 @@
   align-items: center;
 }
 
+.first-rank-bg {
+  width: 262rpx;
+  height: 240rpx;
+  background-image: url(https://i.loli.net/2019/03/21/5c92f57c68f02.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 56rpx;
+}
+
+.second-rank-bg {
+  width: 218rpx;
+  height: 200rpx;
+  background-image: url(https://i.loli.net/2019/03/21/5c92f57c5a00d.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 36rpx;
+}
+
+.third-rank-bg {
+  width: 220rpx;
+  height: 172rpx;
+  background-size: cover;
+  background-image: url(https://i.loli.net/2019/03/21/5c92f57c58f36.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 36rpx;
+}
+
+.dabang {
+  margin-top: 26rpx;
+}
+
 .person-first image, .person-second image, .person-third image {
   width: 120rpx;
   height: 120rpx;
@@ -174,11 +214,11 @@
   text-align: center;
 }
 
-.item-right {
+.item-right, .dabang {
   background: #fab9ab;
   border-radius: 30rpx;
   font-size: 28rpx;
   color: #332c34;
-  padding: 10rpx 60rpx;
+  padding: 4rpx 60rpx;
   text-align: center;
 }

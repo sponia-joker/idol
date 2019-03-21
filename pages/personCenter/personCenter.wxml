@@ -1,2 +1,66 @@
-<!--pages/personCenter/personCenter.wxml-->
-<text>个人中心</text>
+<view class='container'>
+  <view class='person-profile'>
+    <view class='profile-top'>
+      <view class='person-profile-logo'>
+        <image src='/images/person_one.png'></image>
+        <text>朱一龙公会</text>
+      </view>
+      <view class='profile-name'>
+        <text>小姐姐喜欢我</text>
+        <image src='/images/pen_icon.png'></image>
+      </view>
+      <view class='profile-id'>ID:1234567</view>
+    </view>
+    <view class='profile-bottom'>
+      <view class='bottom-item'>
+        <text>鲜花</text>
+        <view>
+          <image src='/images/flower_icon.png'></image>
+          <text>115009</text>
+        </view>
+      </view>
+      <view class='bottom-item'>
+        <text>喇叭</text>
+        <view>
+          <image src='/images/trumpet_icon.png'></image>
+          <text>115009</text>
+        </view>
+      </view>
+      <view class='bottom-item'>
+        <text>贡献</text>
+        <view>
+          <image src='/images/heart_icon.png'></image>
+          <text>115009</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class='person-function'>
+    <view class='person-function-item'>
+      <view class='item-left'>
+        <image src='/images/car_icon.png'></image>
+        <text>获取鲜花</text>
+      </view>
+      <image src='/images/right_arrow.png' style='width:20rpx;height:34rpx'></image>
+    </view>
+    <view class='person-function-item'>
+      <view class='item-left'>
+        <image src='/images/exchange_icon.png'></image>
+        <text>兑换鲜花</text>
+      </view>
+      <image src='/images/right_arrow.png' style='width:20rpx;height:34rpx'></image>
+    </view>
+    <view class='person-function-item'>
+      <view class='item-left'>
+        <image src='/images/share_icon.png'></image>
+        <text>号召打榜</text>
+      </view>
+      <image src='/images/right_arrow.png' style='width:20rpx;height:34rpx'></image>
+    </view>
+
+  </view>
+  <view class='person-quit'>退出公会</view>
+
+
+</view>

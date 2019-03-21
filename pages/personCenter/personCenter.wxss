@@ -1,1 +1,150 @@
 /* pages/personCenter/personCenter.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2d252f;
+  height: 100vh;
+}
+
+.person-profile {
+  margin-top: 94rpx;
+  position: relative;
+}
+
+.person-profile-logo {
+  position: absolute;
+  left: 40rpx;
+  top: -54rpx;
+}
+
+.person-profile-logo text {
+  font-size: 20rpx;
+  color: #fab9ab;
+  padding: 4rpx 32rpx;
+  position: absolute;
+  background: #19181f;
+  border: 1px solid #19181f;
+  border-radius: 30px;
+  left: 0;
+  bottom: 0;
+}
+
+.person-profile-logo image {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+}
+
+.person-profile {
+  width: 700rpx;
+  padding: 0 30rpx;
+  height: 368rpx;
+  background: #fab9ab;
+  border-radius: 26rpx;
+}
+
+.profile-top {
+  padding-top: 36rpx;
+  padding-bottom: 44rpx;
+  border-bottom: 2rpx solid rgba(25, 24, 31, 0.10);
+}
+
+.profile-name {
+  padding-left: 282rpx;
+}
+
+.profile-name text {
+  font-size: 17px;
+  color: #19181f;
+  vertical-align: middle;
+}
+
+.profile-name image {
+  width: 26rpx;
+  height: 28rpx;
+  vertical-align: middle;
+  margin-left: 38rpx;
+}
+
+.profile-id {
+  padding-left: 282rpx;
+  font-size: 28rpx;
+  color: #19181f;
+  margin-top: 14rpx;
+}
+
+.profile-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom-item {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+.bottom-item view {
+  margin-top: 20rpx;
+}
+
+.bottom-item text {
+  font-size: 28rpx;
+  color: #19181f;
+}
+
+.bottom-item image {
+  width: 30rpx;
+  height: 30rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+
+.person-function {
+  width: 700rpx;
+  background: #19181f;
+  border-radius: 26rpx;
+  margin-top: 20rpx;
+  padding: 30rpx;
+}
+
+.person-function-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: rgba(250, 185, 171, 1);
+  line-height: 20px;
+  width: 640rpx;
+  height: 90rpx;
+  border-bottom: 2rpx solid rgba(250, 185, 171, 0.2);
+}
+
+.person-function :last-child {
+  border: 0;
+}
+
+.item-left image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+  vertical-align: top;
+}
+
+.person-quit {
+  font-size: 14px;
+  color: #332c34;
+  letter-spacing: -0.41px;
+  text-align: center;
+  background: #fab9ab;
+  border-radius: 38px;
+  height: 76rpx;
+  width: 560rpx;
+  margin-top: 70rpx;
+  line-height: 76rpx;
+}

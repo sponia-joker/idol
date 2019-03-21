@@ -2,6 +2,7 @@
 
 view, image, text, navigator, .container {
   box-sizing: border-box;
+  font-weight: 400;
   padding: 0;
   margin: 0;
 }
@@ -9,19 +10,17 @@ view, image, text, navigator, .container {
 /* flower-template */
 
 .flower-template {
-  font-size: 28rpx;
-  color: #fab9ab;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-.flower-template::after {
-  content: '';
-  display: block;
-  position: absolute;
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAeCAYAAAFBKe5zAAAABGdBTUEAALGPC/xhBQAABEVJREFUSA2lVk1oXFUUvufOe5Oa1IXELlpQ2/oDFrtom9KVP9F0ZuFPxZkg7aKkVaOIICrqQlSqbhR1oyBFNwYrQmbyA0F9kwmxtCCGbEqJlKZIQRD8SaDYpHbez/E7L7kvd968aSPexZy/79x73rnnnDtKWYuEb9QqQyqX+5SCWnUAchhxNCSGeDW8YTb8Gk20hompEdZwq5xtiM/0a5W3mPmYjSSgZqHYky/2rwY2PKdY7bBB2bxfG/7QtmgjMKtX+NTETUZODKLwl68smsichlcd1MQ7I7jYS6JKNG73hi5/4Z8lUjQRb0VavSfhUs+jy+Ll5OhFrTQ9j7hfN9sQ6fepr/SLkddH5Vx/svJxFrrpM2wAR/wScuvbOuHjfArD0+N3UO+BC/ZXid4sAGfcYv++lQuwPn0FQOfyxfLdLc6kn9O+N3zJ7CLU7d6WV8SnhY9TRGotLObdjqNyd/oq/D0G36C3UE+PAJ4ReXVdBXWJ1F9uofysUeIbph3fqyzJtxhlUKsc5Lm5vJEzKXteF6ouSUYa1JLWQC/tQjqjNNDILQ4q4gfEiGT8YUA2bXFgxU8JACW2iesjd9lg4VtiTecegGOUy807fU+cEIf4hIZXOS4CYv9eqL1w0ttRGH5lErEaEg8KCMqiUOT8ilB7BZPVn0TWmBOPCYPdZ4TKcgv9najzpOZFh832CtUYKONGQURxO8Go3ULpA5z1q9jslc7SoiZ9BI7xPbj57paJ4NjeqJWbbZl6ey8ja7YKHUrqcpOmjYDqi+8EsfbfiLaXilRI7z4bH0yOHMY9hFLyVCjP2zZkqfpa+tIwcr9uAl1L8OvVvix7S2lkgXhq9HY/CC7ANoTEDCCLyTTLwtu69DXYtoQPo8jk4rC0SlCvPpkYr8Os6wAM5EfsfaIw+gbd/omta8df9wCequ5GnR5Mb4BDX8CjMiJ6ro/twLh5NY0RuekOGt7oHld1nqNicUmM7I3cE6jwDBLeNhDcxxRmwGZ551Bey07O2Ut9j/8s/rISRwy9jUTBDyH9fb8YJHJMz7PX2jzGMT9kHlEc1OmH/hw6+ZDYZCUH+I2Fk3j7Nkas3uX5bzuCMPJWIOaXzqCCHFL6TaNpR6MoOsH16naxE8/Ouv7CxfOIeWuWg3QOviKHVATO/lKHaXQ0yRe4m3g8Zvlh68/xGg3qYPHid+02F0eH8rei308jDX+azUWfL5Sfjt9qETIWAtssagdRxIMsjQEgwtArU+HAb7Ddm7aLnN9f/gzt/zLY5LEyOCaaEF5j3n5klDZ1NrhbnUJp1NZl8qRyaT2qaTpfKB0XPaZX+R2tKZ7xNjC46g/YchbPJ8duQeq2GRu+esZVHdvdYvlBS2dY3MTk2E6fgy+Rtl2iRSSnAL5vDdHMYWz8iNLsAvIo7kT+A65/oQ9uQ6eOo6YfTntxbXwL/kK9YZ66tP1/y/9l438BkqbEkiijLE8AAAAASUVORK5CYII=');
+.flower-template-number {
+  font-size: 28rpx;
+  color: #fab9ab;
+  margin-right: 10rpx;
+}
+
+.flower-template-icon {
   width: 23rpx;
   height: 23rpx;
-  right: -34rpx;
-  background-size: cover;
-  bottom: 8rpx;
 }

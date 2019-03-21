@@ -1,2 +1,44 @@
 <!--pages/rules/rules.wxml-->
-<text>pages/rules/rules.wxml</text>
+<view class='container'>
+  <view class='rules-title-bg'>
+    周榜时间及福利
+  </view>
+  <view class='rules-title'>
+    结榜时间
+  </view>
+  <view class='rules-text'>周榜结束时间为星期日的23点59分</view>
+  <view class='rules-title'>
+    周榜前三偶像福利
+  </view>
+  <view class='rules-text'>第一名：新浪微博1500万粉丝推广+手绘表情包</view>
+  <view class='rules-text'>第一名：新浪微博800万粉丝推广</view>
+  <view class='rules-text'>第三名：新浪微博500万粉丝推广</view>
+  <view class='rules-title'>
+    偶像福利进展情况通知
+  </view>
+  <view class='rules-text'>通过官方微信公众号“偶像圈子”发布</view>
+  <view class='rules-title-bg'>
+    月榜时间及福利
+  </view>
+  <view class='rules-title'>
+    结榜时间
+  </view>
+  <view class='rules-text'>每个自然月最后一天的23点59分</view>
+  <view class='rules-title'>
+    周榜前三偶像福利
+  </view>
+  <view class='rules-text'>冠军：美国纽约时代广场路透社组合海报投放</view>
+  <view class='rules-text'>亚军：美国纽约时代广场路透社组合海报投放</view>
+  <view class='rules-text'>季军：美国纽约时代广场路透社组合海报投放</view>
+  <view class='rules-title'>
+    偶像福利进展情况通知
+  </view>
+  <view class='rules-text'>通过官方微信公众号“偶像圈子”发布</view>
+  <view class='rules-title-bg'>
+    关于鲜花
+  </view>
+  <view class='rules-title'>鲜花规则</view>
+  <view class='rules-text'>第一名：新浪微博1500万粉丝推广+手绘表情包</view>
+  <view class='rules-text'>第一名：新浪微博800万粉丝推广</view>
+  <view class='rules-text'>第三名：新浪微博500万粉丝推广</view>
+</view>

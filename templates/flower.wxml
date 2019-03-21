@@ -1,3 +1,6 @@
 <template name="flower-template">
-  <view class='flower-template'>{{number}}</view>
+  <view class='flower-template'>
+    <view class='flower-template-number'>{{number}}</view>
+    <image src='/images/flower.png' class='flower-template-icon'></image>
+  </view>
 </template>

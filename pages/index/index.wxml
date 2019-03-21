@@ -1,5 +1,5 @@
 <import src="../../templates/flower" />
-<view class='ranking-container'>
+<view class='container'>
   <view class='navbar'>
     <view class='tab-title'>
       <view class='tab-title-item tab-title-lastweek'>上周</view>
@@ -18,15 +18,18 @@
   </view>
   <scroll-view class='tab-content' style="height:{{scrollHeight}}px;" scroll-y>
     <view class='before-third'>
-      <view class='third-rank'>
-        <view class='person-third'>
+      <view class='second-rank'>
+        <view class='person-second'>
           <view class='person-logo'>
-            <image src='/images/person_one.png'></image>
-            <view style='background:#E7E5E4;color:#19181F;'>2</view>
+            <image src='/images/person_three.png'></image>
+            <view style='background:#DDA84A;color:#fff'>3</view>
           </view>
           <view class='person-name'>朱一龙</view>
         </view>
-        <image src='/images/rank_bg_2.png' style='width:218rpx;height:178rpx'></image>
+        <view class='second-rank-bg'>
+          <template is="flower-template" data="{{number: 187992866}}" />
+          <view class='dabang'>打榜</view>
+        </view>
       </view>
       <view class='first-rank'>
         <view class='person-first'>
@@ -36,18 +39,25 @@
           </view>
           <view class='person-name'>朱一龙</view>
         </view>
-        <image src='/images/rank_bg_1.png' style='width:262rpx;height:218rpx'></image>
+        <view class='first-rank-bg'>
+          <template is="flower-template" data="{{number: 187992866}}" />
+          <view class='dabang'>打榜</view>
+        </view>
       </view>
-      <view class='second-rank'>
-        <view class='person-second'>
+      <view class='third-rank'>
+        <view class='person-third'>
           <view class='person-logo'>
-            <image src='/images/person_three.png'></image>
-            <view style='background:#DDA84A;color:#fff'>3</view>
+            <image src='/images/person_one.png'></image>
+            <view style='background:#E7E5E4;color:#19181F;'>2</view>
           </view>
           <view class='person-name'>朱一龙</view>
         </view>
-        <image src='/images/rank_bg_3.png' style='width:220rpx;height:150rpx'></image>
+        <view class='third-rank-bg'>
+          <template is="flower-template" data="{{number: 187992866}}" />
+          <view class='dabang'>打榜</view>
+        </view>
       </view>
+
     </view>
     <view class='after-third'>
       <view class='after-third-item'>
@@ -67,7 +77,7 @@
           <image src='/images/person_two.png'></image>
           <view class='person-name-flower'>
             <view class='person-name'>朱一龙</view>
-             <template is="flower-template" data="{{number: 187992866}}" />
+            <template is="flower-template" data="{{number: 187992866}}" />
           </view>
         </view>
         <view class='item-right'>打榜</view>
@@ -78,7 +88,7 @@
           <image src='/images/person_three.png'></image>
           <view class='person-name-flower'>
             <view class='person-name'>朱一龙</view>
-             <template is="flower-template" data="{{number: 187992866}}" />
+            <template is="flower-template" data="{{number: 187992866}}" />
           </view>
         </view>
         <view class='item-right'>打榜</view>
@@ -89,7 +99,7 @@
           <image src='/images/person_one.png'></image>
           <view class='person-name-flower'>
             <view class='person-name'>朱一龙</view>
-             <template is="flower-template" data="{{number: 187992866}}" />
+            <template is="flower-template" data="{{number: 187992866}}" />
           </view>
         </view>
         <view class='item-right'>打榜</view>
@@ -100,7 +110,7 @@
           <image src='/images/person_two.png'></image>
           <view class='person-name-flower'>
             <view class='person-name'>朱一龙</view>
-             <template is="flower-template" data="{{number: 187992866}}" />
+            <template is="flower-template" data="{{number: 187992866}}" />
           </view>
         </view>
         <view class='item-right'>打榜</view>

@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/flowerGod/flowerGod",
     "pages/personCenter/personCenter",
-    "pages/guild/guild",
+    "pages/flowerGod/flowerGod",
     "pages/rules/rules",
+    "pages/index/index",
+    "pages/guild/guild",
     "pages/launch/launch"
   ],
   "window": {
@@ -14,9 +14,9 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color":"#FAB9AB",
-    "selectedColor":"#FAB9AB",
-    "backgroundColor":"#010101",
+    "color": "#FAB9AB",
+    "selectedColor": "#FAB9AB",
+    "backgroundColor": "#010101",
     "list": [
       {
         "pagePath": "pages/index/index",
