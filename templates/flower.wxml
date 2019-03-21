@@ -1,0 +1,3 @@
+<template name="flower-template">
+  <view class='flower-template'>{{number}}</view>
+</template>

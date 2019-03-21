@@ -1,19 +1,20 @@
-<view class='ranking'>
+<import src="../../templates/flower" />
+<view class='ranking-container'>
   <view class='navbar'>
     <view class='tab-title'>
-    <view class='tab-title-item tab-title-lastweek'>上周</view>
-    <view class='tab-title-item tab-title-week tab-title-default'>本周</view>
-    <view class='tab-title-item tab-title-lastmonth'>上月</view>
-    <view class='tab-title-item tab-title-month'>本月</view>
-  </view>
-  <view class='tab-search'>
-    <image src='/images/search-glyph.png' class='tab-search-icon'></image>
-    <input name="input" placeholder-class="place-holder" class="tab-search-input" focus="{{false}}" value="{{searchValue}}" confirm-type="search" bindinput="inputChange" bindfocus="inputFocus" bindconfirm="onKeywordConfirm" placeholder="请输入您喜欢的明星名字" />
-  </view>
-  <view class='count-down'>
-    <view class=' count-down-time'>本期倒计时：02天12:12:12</view>
-    <navigator class='count-down-rules' url="/pages/rules/rules">榜单规则</navigator>
-  </view>
+      <view class='tab-title-item tab-title-lastweek'>上周</view>
+      <view class='tab-title-item tab-title-week tab-title-default'>本周</view>
+      <view class='tab-title-item tab-title-lastmonth'>上月</view>
+      <view class='tab-title-item tab-title-month'>本月</view>
+    </view>
+    <view class='tab-search'>
+      <image src='/images/search-glyph.png' class='tab-search-icon'></image>
+      <input name="input" placeholder-class="place-holder" class="tab-search-input" focus="{{false}}" value="{{searchValue}}" confirm-type="search" bindinput="inputChange" bindfocus="inputFocus" bindconfirm="onKeywordConfirm" placeholder="请输入您喜欢的明星名字" />
+    </view>
+    <view class='count-down'>
+      <view class=' count-down-time'>本期倒计时：02天12:12:12</view>
+      <navigator class='count-down-rules' url="/pages/rules/rules">榜单规则</navigator>
+    </view>
   </view>
   <scroll-view class='tab-content' style="height:{{scrollHeight}}px;" scroll-y>
     <view class='before-third'>
@@ -55,69 +56,54 @@
           <image src='/images/person_one.png'></image>
           <view class='person-name-flower'>
             <view class='person-name'>朱一龙</view>
-            <view class='person-flower'>187992866</view>
-            <image class='flower-icon' src='/images/flower.png'></image>
+            <template is="flower-template" data="{{number: 187992866}}" />
           </view>
         </view>
-        <view class='item-right'>
-          打榜
-        </view>
+        <view class='item-right'>打榜</view>
       </view>
-       <view class='after-third-item'>
+      <view class='after-third-item'>
         <view class='item-left'>
           <view class='item-index'>5</view>
           <image src='/images/person_two.png'></image>
           <view class='person-name-flower'>
             <view class='person-name'>朱一龙</view>
-            <view class='person-flower'>187992866</view>
-            <image class='flower-icon' src='/images/flower.png'></image>
+             <template is="flower-template" data="{{number: 187992866}}" />
           </view>
         </view>
-        <view class='item-right'>
-          打榜
-        </view>
+        <view class='item-right'>打榜</view>
       </view>
-       <view class='after-third-item'>
+      <view class='after-third-item'>
         <view class='item-left'>
           <view class='item-index'>6</view>
           <image src='/images/person_three.png'></image>
           <view class='person-name-flower'>
             <view class='person-name'>朱一龙</view>
-            <view class='person-flower'>187992866</view>
-            <image class='flower-icon' src='/images/flower.png'></image>
+             <template is="flower-template" data="{{number: 187992866}}" />
           </view>
         </view>
-        <view class='item-right'>
-          打榜
-        </view>
+        <view class='item-right'>打榜</view>
       </view>
-       <view class='after-third-item'>
+      <view class='after-third-item'>
         <view class='item-left'>
           <view class='item-index'>7</view>
           <image src='/images/person_one.png'></image>
           <view class='person-name-flower'>
             <view class='person-name'>朱一龙</view>
-            <view class='person-flower'>187992866</view>
-            <image class='flower-icon' src='/images/flower.png'></image>
+             <template is="flower-template" data="{{number: 187992866}}" />
           </view>
         </view>
-        <view class='item-right'>
-          打榜
-        </view>
+        <view class='item-right'>打榜</view>
       </view>
-       <view class='after-third-item'>
+      <view class='after-third-item'>
         <view class='item-left'>
           <view class='item-index'>8</view>
           <image src='/images/person_two.png'></image>
           <view class='person-name-flower'>
             <view class='person-name'>朱一龙</view>
-            <view class='person-flower'>187992866</view>
-            <image class='flower-icon' src='/images/flower.png'></image>
+             <template is="flower-template" data="{{number: 187992866}}" />
           </view>
         </view>
-        <view class='item-right'>
-          打榜
-        </view>
+        <view class='item-right'>打榜</view>
       </view>
     </view>
     <!-- <view class='tab-content-lastweek'></view> -->

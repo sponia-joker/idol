@@ -1,6 +1,6 @@
 /**index.wxss**/
 
-.ranking {
+.ranking-container {
   background-color: #2d252f;
   display: flex;
   flex-direction: column;
@@ -151,19 +151,6 @@
 .after-third .person-name {
   font-size: 28rpx;
   color: #fff;
-}
-
-.after-third .person-flower {
-  font-size: 28rpx;
-  color: #fab9ab;
-}
-
-.after-third .flower-icon {
-  position: absolute;
-  width: 23rpx;
-  height: 23rpx;
-  right: -34rpx;
-  bottom: 8rpx;
 }
 
 .after-third-item {
