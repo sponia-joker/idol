@@ -7,7 +7,7 @@
       </view>
       <view class='profile-name'>
         <text>小姐姐喜欢我</text>
-        <image src='/images/pen_icon.png' bindtap='updateUsername'></image>
+        <image src='/images/pen_icon.png' bindtap='_updateUsername'></image>
       </view>
       <view class='profile-id'>ID:1234567</view>
     </view>
@@ -45,7 +45,7 @@
       <image src='/images/right_arrow.png' style='width:20rpx;height:34rpx'></image>
     </navigator>
     <view class='person-function-item'>
-      <view class='item-left'>
+      <view class='item-left' bindtap='_updateFlower'>
         <image src='/images/exchange_icon.png'></image>
         <text>兑换鲜花</text>
       </view>
@@ -60,7 +60,38 @@
     </view>
 
   </view>
-  <view class='person-quit'>退出公会</view>
-
-
+  <view class='person-quit' bindtap='_dropGuild'>退出公会</view>
 </view>
+
+<dialog id='updateUsernameModal' bind:cancelEvent='_cancelUsernameEvent' bind:confirmEvent='_confirmUsernameEvent'>
+  <view class='usename-modal'>
+    <view class='usename-modal-title'>修改昵称</view>
+    <view class='usename-modal-note'>（仅能修改一次）</view>
+    <input placeholder-class='place-holder-username' class='username-input' value='{{usenameInputValue}}' bindconfirm='onKeywordConfirm' placeholder='请输入昵称' bindinput='usenameInputChange' />
+  </view>
+</dialog>
+
+<dialog id='updateFlowerModal' bind:cancelEvent='_cancelFlowerEvent' bind:confirmEvent='_confirmFlowerEvent'>
+  <view class='flower-modal'>
+    <view class='flower-modal-title'>兑换鲜花</view>
+    <view class='flower-modal-note'>
+      兑换比例：
+      <image src='/images/heart_light_icon.png' style='width:32rpx;height:32rpx;vertical-align: middle;'></image>
+      20 =
+      <image src='/images/flower_light_icon.png' style='width:32rpx;height:32rpx;vertical-align: middle;'></image>
+      1
+    </view>
+    <input placeholder-class='place-holder-flower' type='number' class='flower-input' value='{{flowerInputValue}}' bindconfirm='onKeywordConfirm' placeholder='请输入需要兑换的鲜花数量' bindinput='flowerInputChange' />
+  </view>
+</dialog>
+
+<dialog id='dropGuildModal' bind:cancelEvent='_canceldropGuildEvent' bind:confirmEvent='_confirmdropGuildEvent'>
+  <view class='drop-guild-modal'>
+    <view class='guild-modal-title'>退出公会</view>
+    <view style='margin-top:20rpx;'> 1、退出公会后个人鲜花数、贡献值、喇叭、 徽章均会清零。
+    </view>
+    <view> 2、花神等级将会保留。
+    </view>
+    <view> 3、加入新公会后不可再退出，请慎重考虑！ </view>
+  </view>
+</dialog>

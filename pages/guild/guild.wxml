@@ -1,2 +1,411 @@
-<!--pages/guild/guild.wxml-->
-<text>我的公会</text>
+<import src="../../templates/hexagon" />
+<view class='container'>
+  <view class='guild-top'>
+    <view class='guild-cover' style="background-image: url('https://i.loli.net/2019/03/23/5c95e3969f9a8.png')">
+      <view class='guild-profile'>
+        <navigator class='guild-logo' url='/pages/poster/poster'>
+          <image src='/images/person_four.png'></image>
+          <text>TA的海报</text>
+        </navigator>
+        <view class='guild-profile-info'>
+          <view class='guild-idol'>
+            <text class='guild-idol-name'>朱一龙</text>
+            <text class='guild-idol-rank'>当前排名：1</text>
+          </view>
+          <view class='guild-flower-number'>
+            <view class='week-number'>
+              <text>本周：</text>
+              <image src='/images/flower_light_icon.png'></image>
+              <text>12345556</text>
+            </view>
+            <view class='month-number' style='margin-left:20rpx'>
+              <text>本月：</text>
+              <image src='/images/flower_light_icon.png'></image>
+              <text>12345556</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='guild-function'>
+        <view class='guild-function-item' bindtap='toggleSendFlower' style='border-right:1rpx solid rgba(250,185,171,0.45);'>
+          <image src='/images/heart_dark_icon.png'></image>
+          <text>给TA送花</text>
+        </view>
+        <view class='guild-function-item' bindtap='toggleInvationVis'>
+          <image src='/images/share_dark_icon.png'></image>
+          <text>给TA拉票</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='contribution'>
+      <view class='contribution-people'>
+        <view class='contribution-logo'>
+          <image src='/images/person_one.png'></image>
+          <template is="hexagon-template" data="{{number: 1}}" />
+        </view>
+        <view class='contribution-logo'>
+          <image src='/images/person_two.png'></image>
+          <template is="hexagon-template" data="{{number: 2}}" />
+        </view>
+        <view class='contribution-logo'>
+          <image src='/images/person_three.png'></image>
+          <template is="hexagon-template" data="{{number: 3}}" />
+        </view>
+        <view class='contribution-logo'>
+          <image src='/images/person_four.png'></image>
+          <template is="hexagon-template" data="{{number: 4}}" />
+        </view>
+        <view class='contribution-logo'>
+          <image src='/images/person_five.png'></image>
+          <template is="hexagon-template" data="{{number: 5}}" />
+        </view>
+      </view>
+      <navigator url='/pages/contribution/contribution'>贡献榜></navigator>
+    </view>
+    <view class='guild-notice'>
+      <text>【公告】第四期月榜前三投屏回顾</text>
+      <navigator url='/pages/notice/notice'>更多></navigator>
+    </view>
+  </view>
+  <scroll-view class='guild-message' style="height:{{scrollHeight}}px" scroll-y scroll-top="{{chatTop}}">
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_five.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_four.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_three.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_five.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_four.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_two.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_four.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+    <view class='message-item'>
+      <image class='message-item-logo' src='/images/person_one.png'></image>
+      <text class='message-item-name'>粉色云朵：</text>
+      <text class='message-item-send'>送了</text>
+      <image class='message-item-icon' src='/images/flower_light_icon.png'></image>
+      <text class='message-item-number'>6666朵鲜花</text>
+      <text class='message-item-time'>14:10:35</text>
+    </view>
+
+  </scroll-view>
+  <view class='edit-icon' bindtap='toggleMessageInput'>
+    <image src='/images/edit_icon.png'></image>
+  </view>
+</view>
+
+
+<!-- 给Ta送花 -->
+
+<dialog id='sendFlowerModal' bind:cancelEvent='_cancelSendFlowerEvent' bind:confirmEvent='_confirmSendFlowerEvent' height='700'>
+  <view class='send-flower-modal'>
+    <view class='flower-modal-title'>赠送鲜花</view>
+    <view class='people-flower-left'>
+      剩余：
+      <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;'></image>
+      99999
+    </view>
+    <view class='send-flower-btn'>
+      <view class='flower-item'>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;'></image>
+        <text style='font-size:30rpx;color:rgba(250,185,171,1);margin-left:20rpx;'>99</text>
+      </view>
+      <view class='flower-item'>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;'></image>
+        <text style='font-size:30rpx;color:rgba(250,185,171,1);margin-left:20rpx;'>99</text>
+      </view>
+      <view class='flower-item'>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;'></image>
+        <text style='font-size:30rpx;color:rgba(250,185,171,1);margin-left:20rpx;'>99</text>
+      </view>
+      <view class='flower-item'>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;'></image>
+        <text style='font-size:30rpx;color:rgba(250,185,171,1);margin-left:20rpx;'>99</text>
+      </view>
+      <view class='flower-item'>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;'></image>
+        <text style='font-size:30rpx;color:rgba(250,185,171,1);margin-left:20rpx;'>99</text>
+      </view>
+      <view class='flower-item'>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;'></image>
+        <text style='font-size:30rpx;color:rgba(250,185,171,1);margin-left:20rpx;'>99</text>
+      </view>
+      <input placeholder-class="flower-place-holder" value="{{flowerNumberValue}}" type='number' placeholder="自定义鲜花数" bindinput='flowerNumberInput' class='custom-flower-number'></input>
+    </view>
+  </view>
+</dialog>
+
+<!-- 全服喊话，消息输入框 -->
+
+<view class="message-textarea {{messageInput?'show-message':'hidden-message'}}">
+  <image src='/images/close_icon.png' class='message-close' bindtap='toggleMessageInput'></image>
+  <view class='simulate-border'>
+    <input placeholder-class="place-holder" value="{{messageValue}}" cursor-spacing='180rpx' maxlength='16' placeholder="全服喊话可输入16个字"></input>
+  </view>
+  <view class='message-bottom'>
+    <view>
+      <image src='/images/trumpet_icon.png'></image>
+      <text style='color:rgba(153,141,154,1);font-size:28rpx'>x3</text>
+    </view>
+    <view class='message-send-btn'>
+      <text>全服喊话</text>
+      <image src='/images/trumpet_icon.png' style='width:24rpx;height:20rpx'></image>
+      <text>x3</text>
+    </view>
+  </view>
+</view>
+<!-- 遮罩 -->
+<view class="{{invitation?'show-mask':'hidden-mask'}}"></view>
+<!-- 给他拉票底部弹出内容 -->
+<view hover-stop-propagation='true' class="popup-content {{invitation?'show-popup':'hidden-popup'}}">
+  <view class='popup-panel'>
+    <image src='/images/person_group.png' class='person-group' style="display:{{invitation?'block':'none'}}"></image>
+    <view style='margin-top:112rpx'>已邀请2人</view>
+    <view style='margin-bottom:10rpx'>被邀请人人意加入一个公会即可领取奖励</view>
+    <image src='/images/close_icon.png' class='close-icon' bindtap='toggleInvationVis'></image>
+  </view>
+  <scroll-view class='invitation' scroll-y>
+    <view class='invitation-item'>
+      <image class='invitation-item-logo' src='/images/person_one.png'></image>
+      <view style='margin-left:22rpx'>
+        <view style='font-size:28rpx;color:rgba(255,255,255,1);'>第一位好友</view>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;margin-top:10rpx;'></image>
+        <text style='margin-left:10rpx;margin-top:10rpx'>+5000</text>
+      </view>
+      <view class='invitation-button'>邀请</view>
+    </view>
+    <view class='invitation-item'>
+      <image class='invitation-item-logo' src='/images/person_one.png'></image>
+      <view style='margin-left:22rpx'>
+        <view style='font-size:28rpx;color:rgba(255,255,255,1);'>第一位好友</view>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;margin-top:10rpx;'></image>
+        <text style='margin-left:10rpx;margin-top:10rpx'>+5000</text>
+      </view>
+      <view class='invitation-button'>邀请</view>
+    </view>
+    <view class='invitation-item'>
+      <image class='invitation-item-logo' src='/images/person_one.png'></image>
+      <view style='margin-left:22rpx'>
+        <view style='font-size:28rpx;color:rgba(255,255,255,1);'>第一位好友</view>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;margin-top:10rpx;'></image>
+        <text style='margin-left:10rpx;margin-top:10rpx'>+5000</text>
+      </view>
+      <view class='invitation-button'>邀请</view>
+    </view>
+    <view class='invitation-item'>
+      <image class='invitation-item-logo' src='/images/person_one.png'></image>
+      <view style='margin-left:22rpx'>
+        <view style='font-size:28rpx;color:rgba(255,255,255,1);'>第一位好友</view>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;margin-top:10rpx;'></image>
+        <text style='margin-left:10rpx;margin-top:10rpx'>+5000</text>
+      </view>
+      <view class='invitation-button'>邀请</view>
+    </view>
+    <view class='invitation-item'>
+      <image class='invitation-item-logo' src='/images/person_one.png'></image>
+      <view style='margin-left:22rpx'>
+        <view style='font-size:28rpx;color:rgba(255,255,255,1);'>第一位好友</view>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;margin-top:10rpx;'></image>
+        <text style='margin-left:10rpx;margin-top:10rpx'>+5000</text>
+      </view>
+      <view class='invitation-button'>邀请</view>
+    </view>
+    <view class='invitation-item'>
+      <image class='invitation-item-logo' src='/images/person_one.png'></image>
+      <view style='margin-left:22rpx'>
+        <view style='font-size:28rpx;color:rgba(255,255,255,1);'>第一位好友</view>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;margin-top:10rpx;'></image>
+        <text style='margin-left:10rpx;margin-top:10rpx'>+5000</text>
+      </view>
+      <view class='invitation-button'>邀请</view>
+    </view>
+    <view class='invitation-item'>
+      <image class='invitation-item-logo' src='/images/person_one.png'></image>
+      <view style='margin-left:22rpx'>
+        <view style='font-size:28rpx;color:rgba(255,255,255,1);'>第一位好友</view>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;margin-top:10rpx;'></image>
+        <text style='margin-left:10rpx;margin-top:10rpx'>+5000</text>
+      </view>
+      <view class='invitation-button'>邀请</view>
+    </view>
+    <view class='invitation-item'>
+      <image class='invitation-item-logo' src='/images/person_one.png'></image>
+      <view style='margin-left:22rpx'>
+        <view style='font-size:28rpx;color:rgba(255,255,255,1);'>第一位好友</view>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;margin-top:10rpx;'></image>
+        <text style='margin-left:10rpx;margin-top:10rpx'>+5000</text>
+      </view>
+      <view class='invitation-button'>邀请</view>
+    </view>
+    <view class='invitation-item'>
+      <image class='invitation-item-logo' src='/images/person_one.png'></image>
+      <view style='margin-left:22rpx'>
+        <view style='font-size:28rpx;color:rgba(255,255,255,1);'>第一位好友</view>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;margin-top:10rpx;'></image>
+        <text style='margin-left:10rpx;margin-top:10rpx'>+5000</text>
+      </view>
+      <view class='invitation-button'>邀请</view>
+    </view>
+    <view class='invitation-item'>
+      <image class='invitation-item-logo' src='/images/person_one.png'></image>
+      <view style='margin-left:22rpx'>
+        <view style='font-size:28rpx;color:rgba(255,255,255,1);'>第一位好友</view>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;margin-top:10rpx;'></image>
+        <text style='margin-left:10rpx;margin-top:10rpx'>+5000</text>
+      </view>
+      <view class='invitation-button'>邀请</view>
+    </view>
+    <view class='invitation-item'>
+      <image class='invitation-item-logo' src='/images/person_one.png'></image>
+      <view style='margin-left:22rpx'>
+        <view style='font-size:28rpx;color:rgba(255,255,255,1);'>第一位好友</view>
+        <image src='/images/flower_light_icon.png' style='width:22rpx;height:22rpx;margin-top:10rpx;'></image>
+        <text style='margin-left:10rpx;margin-top:10rpx'>+5000</text>
+      </view>
+      <view class='invitation-button'>邀请</view>
+    </view>
+  </scroll-view>
+</view>

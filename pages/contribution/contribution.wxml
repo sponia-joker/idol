@@ -1,0 +1,680 @@
+<view class='container'>
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">上月</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">本月</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">上周</view>
+    <view class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">本周</view>
+    <view class="swiper-tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="clickTab">总榜</view>
+  </view>
+
+  <scroll-view class="tab-content" style="height:{{scrollHeight}}px;" scroll-y>
+    <view class="tab-content-item {{currentTab==0?'active':''}}">
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+    </view>
+    <view class="tab-content-item {{currentTab==1?'active':''}}">
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱二龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱二龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱二龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱二龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱二龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱二龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+    </view>
+    <view class="tab-content-item {{currentTab==2?'active':''}}">
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱三龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱三龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱三龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱三龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱三龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱三龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱三龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+    </view>
+    <view class="tab-content-item {{currentTab==3?'active':''}}">
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱四龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱四龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱四龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱四龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱四龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱四龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱四龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+    </view>
+    <view class="tab-content-item {{currentTab==4?'active':''}}">
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱五龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱五龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱五龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱五龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱五龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱五龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱五龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+      <view class='person-item'>
+        <view class='person-index'>1</view>
+        <view class='person-logo'>
+          <image src='/images/person_one.png'></image>
+          <!-- <text>1</text> -->
+        </view>
+        <view class='person-name'>朱一龙小龙包</view>
+        <image src='/images/flower_light_icon.png' class='person-item-flower-icon'></image>
+        <text>65864864朵</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='bottom'>
+    <text>999+</text>
+    <image src='/images/person_two.png' class='bottom-person'></image>
+    <view class='person-name'>朱一龙小龙包</view>
+    <image src='/images/flower_light_icon.png' class='bottom-flower-image'></image>
+    <text>65864864朵</text>
+  </view>
+
+</view>

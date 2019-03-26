@@ -1,0 +1,3 @@
+<template name="hexagon-template">
+  <view class='hexagon'>{{number}}</view>
+</template>

@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "dialog": "/components/dialog"
+  },
+  "disableScroll": true,
+  "backgroundColor": "#2d252f",
+  "navigationBarTitleText": "朱一龙的公会"
 }

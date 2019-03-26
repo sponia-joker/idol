@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
-  "disableScroll":true
+  "usingComponents": {
+    "dialog": "/components/dialog"
+  },
+  "navigationBarTitleText": "个人中心",
+  "disableScroll": true
 }

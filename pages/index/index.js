@@ -4,13 +4,24 @@ const app = getApp()
 
 Page({
   data: {
+    currentTab: 1,
     scrollHeight: 0,
     searchValue: '',
     searchStatus: true,
     idolsList: []
   },
+  clickTab: function(e) {
+    var that = this;
+    console.log(e.target.dataset.current)
+    if (this.data.currentTab === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentTab: e.target.dataset.current
+      })
+    }
+  },
   inputChange: function(e) {
-    console.log('inputChange', e)
     this.setData({
       searchValue: e.detail.value
     });
@@ -31,6 +42,23 @@ Page({
     // })
   },
   onLoad: function() {
+    // wx.login({
+    //   success(res) {
+    //     if (res.code) {
+    //       // 发起网络请求
+    //       console.log(res.code)
+    //       wx.request({
+    //         url: 'https://bzb.chanhua.art/api/xcx/login',
+    //         method: 'post',
+    //         data: {
+    //           code: res.code
+    //         }
+    //       })
+    //     } else {
+    //       console.log('登录失败！' + res.errMsg)
+    //     }
+    //   }
+    // })
     var that = this
     wx.getSystemInfo({
       success: function(res) {

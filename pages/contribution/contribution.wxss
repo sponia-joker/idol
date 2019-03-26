@@ -1,0 +1,147 @@
+/* pages/detail/detail.wxss */
+
+.container {
+  background-color: #2d252f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20rpx;
+}
+
+.swiper-tab {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  line-height: 60rpx;
+  background-color: #2d252f;
+  font-size: 24rpx;
+  color: rgba(250, 185, 171, 1);
+  height: 60rpx;
+  width: 700rpx;
+  border-left: 0;
+  border-radius: 8rpx;
+  overflow: hidden;
+  border: 2rpx solid rgba(250, 185, 171, 1);
+}
+
+.swiper-tab :first-child {
+  border-left: 0;
+}
+
+.swiper-tab :last-child {
+  border-right: 0;
+}
+
+.swiper-tab .active {
+  background-color: #fab9ab;
+  color: rgba(25, 24, 31, 1);
+  border: 0;
+}
+
+.swiper-tab-item {
+  text-align: center;
+  width: 142rpx;
+  height: 60rpx;
+  border-right: 2rpx solid rgba(250, 185, 171, 1);
+}
+
+.tab-content {
+  width: 100%;
+}
+
+.tab-content-item {
+  display: none;
+}
+
+.tab-content .active {
+  display: block;
+  opacity: 1;
+}
+
+.person-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 26rpx 24rpx;
+  border-bottom: 2rpx solid rgba(250, 185, 171, 0.15);
+}
+
+.person-index {
+  font-size: 28rpx;
+  width: 20rpx;
+  text-align: center;
+  color: rgba(250, 185, 171, 1);
+}
+
+.person-item-flower-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 180rpx;
+  margin-right: 20rpx;
+}
+
+.person-logo {
+  position: relative;
+  margin-left: 34rpx;
+}
+
+.person-logo text {
+  font-size: 12rpx;
+  position: absolute;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20rpx;
+  background: rgba(250, 185, 171, 1);
+  bottom: 0;
+  right: -6rpx;
+}
+
+.person-logo image {
+  width: 54rpx;
+  height: 54rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.person-name {
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, 1);
+}
+
+.person-item text {
+  font-size: 28rpx;
+  color: rgba(250, 185, 171, 1);
+}
+
+.bottom {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  height: 100rpx;
+  padding: 0 24rpx;
+  background-color: rgba(25, 24, 31, 1);
+}
+
+.bottom text {
+  font-size: 28rpx;
+  color: rgba(250, 185, 171, 1);
+}
+
+.bottom .bottom-person {
+  width: 54rpx;
+  height: 54rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 30rpx;
+}
+
+.bottom .bottom-flower-image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 20rpx;
+  margin-left: 130rpx;
+}

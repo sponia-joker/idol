@@ -1,0 +1,19 @@
+.container {
+  background-color: #2d252f;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.notice-item {
+  padding: 20rpx 0rpx;
+  margin: 0 24rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid rgba(250,185,171,0.15);
+  font-size: 28rpx;
+  color: rgba(153, 141, 154, 1);
+}
+.notice-item-stick{
+  color:rgba(250,185,171,1);
+}

@@ -1,0 +1,32 @@
+<view class="container">
+  <view class='notice-item notice-item-stick'>【置顶】榜单福利</view>
+  <view class='notice-item'>
+    <view notice-item-title>第四期月榜前三投屏回顾</view>
+    <view notice-item-date>2019-03-21</view>
+  </view>
+  <view class='notice-item'>
+    <view notice-item-title>第四期月榜前三投屏回顾</view>
+    <view notice-item-date>2019-03-21</view>
+  </view>
+  <view class='notice-item'>
+    <view notice-item-title>第四期月榜前三投屏回顾</view>
+    <view notice-item-date>2019-03-21</view>
+  </view>
+  <view class='notice-item'>
+    <view notice-item-title>第四期月榜前三投屏回顾</view>
+    <view notice-item-date>2019-03-21</view>
+  </view>
+  <view class='notice-item'>
+    <view notice-item-title>第四期月榜前三投屏回顾</view>
+    <view notice-item-date>2019-03-21</view>
+  </view>
+  <view class='notice-item'>
+    <view notice-item-title>第四期月榜前三投屏回顾</view>
+    <view notice-item-date>2019-03-21</view>
+  </view>
+  <view class='notice-item'>
+    <view notice-item-title>第四期月榜前三投屏回顾</view>
+    <view notice-item-date>2019-03-21</view>
+  </view>
+
+</view>

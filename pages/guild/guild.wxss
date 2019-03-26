@@ -1,1 +1,467 @@
 /* pages/guild/guild.wxss */
+
+.container {
+  background: #2d252f;
+}
+
+.guild-cover {
+  width: 100%;
+  height: 346rpx;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  z-index: 99;
+}
+
+.guild-cover::after {
+  background-color: rgba(0, 0, 0, 0.75);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.guild-profile {
+  display: flex;
+  flex-direction: row;
+  height: 266rpx;
+  padding-top: 64rpx;
+  padding-left: 24rpx;
+}
+
+.guild-logo {
+  position: relative;
+  height: 120rpx;
+}
+
+.guild-logo text {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 120rpx;
+  height: 27rpx;
+  background: rgba(250, 185, 171, 0.53);
+  border-radius: 0px 0px 6px 6px;
+  font-size: 18rpx;
+  color: rgba(25, 24, 31, 1);
+}
+
+.guild-logo image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.guild-profile-info {
+  height: 64rpx;
+}
+
+.guild-idol-name {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 30rpx;
+}
+
+.guild-idol-rank {
+  font-size: 24rpx;
+  color: rgba(250, 185, 171, 1);
+  margin-left: 20rpx;
+}
+
+.guild-flower-number {
+  display: flex;
+  font-size: 28rpx;
+  color: rgba(250, 185, 171, 1);
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.week-number image, .month-number image {
+  width: 18rpx;
+  height: 18rpx;
+  margin: 0 6rpx;
+}
+
+.guild-function {
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  background: rgba(250, 185, 171, 0.43);
+}
+
+.guild-function-item {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guild-function-item text {
+  font-size: 28rpx;
+  color: rgba(25, 24, 31, 1);
+  margin-left: 16rpx;
+}
+
+.guild-function-item image {
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.contribution {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 84rpx;
+  align-items: center;
+  background: rgba(25, 24, 31, 1);
+}
+
+.contribution-people {
+  display: flex;
+  flex-direction: row;
+}
+
+.contribution navigator {
+  font-size: 28rpx;
+  color: rgba(250, 185, 171, 1);
+  padding-right: 24rpx;
+}
+
+.contribution-logo {
+  position: relative;
+  margin-left: 16rpx;
+}
+
+.contribution-logo image {
+  width: 54rpx;
+  height: 54rpx;
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+.contribution-logo view {
+  position: absolute;
+  bottom: 0rpx;
+  right: -8rpx;
+}
+
+.guild-notice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 84rpx;
+  align-items: center;
+  background: rgba(25, 24, 31, 1);
+  color: rgba(250, 185, 171, 1);
+  font-size: 28rpx;
+  padding: 0 24rpx 0 0;
+  margin-top: 20rpx;
+}
+
+.guild-message {
+  background-color: #2d252f;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24rpx;
+}
+
+.message-item {
+  padding: 0 24rpx;
+  width: 100%;
+  height: 84rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 12rpx;
+  background: linear-gradient(146deg, rgba(250, 185, 171, 1) 0%, rgba(45, 37, 47, 1) 100%);
+}
+
+.message-item-logo {
+  width: 54rpx;
+  height: 54rpx;
+  border-radius: 50%;
+}
+
+.message-item-name {
+  font-size: 28rpx;
+  color: rgba(25, 24, 31, 1);
+  margin-left: 24rpx;
+}
+
+.message-item-send, .message-item-number {
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, 1);
+}
+
+.message-item-time {
+  font-size: 24rpx;
+  color: rgba(45, 37, 47, 1);
+  margin-left: 80rpx;
+}
+
+.message-item-icon {
+  width: 22rpx;
+  height: 22rpx;
+  margin: 0 10rpx;
+}
+
+.edit-icon {
+  position: fixed;
+  bottom: 100rpx;
+  right: 34rpx;
+}
+
+.edit-icon image {
+  width: 116rpx;
+  height: 116rpx;
+}
+
+/* 底部弹出层的内容 */
+
+.popup-content {
+  width: 100%;
+  position: absolute;
+  padding: 0 24rpx;
+  bottom: 0;
+  font-size: 24rpx;
+  color: rgba(250, 185, 171, 1);
+  z-index: 999;
+  height: 914rpx;
+  background: rgba(45, 37, 47, 1);
+  box-shadow: 0px 8rpx 20rpx 18rpx rgba(250, 185, 171, 0.08);
+  border-radius: 26rpx 26rpx 0rpx 0rpx;
+}
+
+.show-popup {
+  animation: slideContentUp 0.2s ease-in both;
+}
+
+.hidden-popup {
+  animation: slideContentDown 0.2s ease-in both;
+}
+
+.popup-panel {
+  position: relative;
+  border-top: 1px solid #2f2430;
+  /* 防止父元素塌陷 */
+}
+
+.person-group {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: -90rpx;
+  left: 50%;
+  transform: translateX(-90rpx);
+}
+
+.close-icon {
+  width: 36rpx;
+  height: 34rpx;
+  position: absolute;
+  top: 24rpx;
+  right: 0rpx;
+}
+
+.invitation {
+  height: 724rpx;
+}
+
+.invitation-item {
+  width: 700rpx;
+  height: 138rpx;
+  background: rgba(25, 24, 31, 0.37);
+  border-radius: 12rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.invitation-item-logo {
+  width: 92rpx;
+  height: 92rpx;
+  border-radius: 50%;
+}
+
+.invitation-button {
+  width: 160rpx;
+  height: 48rpx;
+  background: rgba(250, 185, 171, 1);
+  text-align: center;
+  line-height: 48rpx;
+  color: rgba(51, 44, 52, 1);
+  font-size: 28rpx;
+  margin-left: 266rpx;
+  border-radius: 30rpx;
+}
+
+@keyframes slideContentUp {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 914rpx;
+  }
+}
+
+@keyframes slideContentDown {
+  from {
+    height: 914rpx;
+  }
+
+  to {
+    height: 0;
+  }
+}
+
+/* show-mask */
+
+.show-mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+}
+
+.hidden-mask {
+  display: none;
+}
+
+/* 给TA送花样式 */
+
+.send-flower-modal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flower-modal-title {
+  text-align: center;
+  width: 100%;
+  padding: 16rpx 0;
+  border-bottom: 2rpx solid rgba(250, 185, 171, 0.45);
+  font-size: 34rpx;
+  color: rgba(255, 255, 255, 1);
+}
+
+.people-flower-left {
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, 1);
+  padding: 30rpx;
+  padding-bottom: 0rpx;
+  width: 100%;
+}
+
+.send-flower-btn {
+  width: 560rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.custom-flower-number {
+  width: 560rpx;
+  height: 100rpx;
+  background: rgba(250, 185, 171, 0.41);
+  border-radius: 12rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.flower-place-holder {
+  font-size: 28rpx;
+  color: rgba(250, 185, 171, 1);
+}
+
+.send-flower-btn .flower-item {
+  margin-top: 20rpx;
+  width: 176rpx;
+  height: 100rpx;
+  background: rgba(250, 185, 171, 0.41);
+  border-radius: 12rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 全服喊话输入框样式 */
+
+.message-textarea {
+  position: absolute;
+  bottom: 16rpx;
+  left: 24rpx;
+  width: 700rpx;
+  height: 300rpx;
+  background: rgba(245, 245, 245, 1);
+  border-radius: 12rpx;
+}
+
+.show-message {
+  visibility: visible;
+}
+
+.hidden-message {
+  visibility: hidden;
+}
+
+.message-textarea input {
+  width: 658rpx;
+  border: 0;
+  outline: 0;
+  padding-left: 14rpx;
+}
+
+.simulate-border {
+  width: 658rpx;
+  height: 150rpx;
+  border: 1px solid rgba(153, 141, 154, 1);
+  margin: 66rpx auto 0;
+}
+
+.place-holder {
+  font-size: 28rpx;
+  color: rgba(153, 141, 154, 1);
+}
+
+.message-close {
+  width: 36rpx;
+  height: 34rpx;
+  position: absolute;
+  top: 14rpx;
+  right: 20rpx;
+}
+
+.message-bottom {
+  padding: 10rpx 24rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.message-bottom image {
+  width: 32rpx;
+  height: 30rpx;
+  vertical-align: middle;
+}
+
+.message-send-btn {
+  padding: 10rpx 20rpx;
+  height: 48rpx;
+  background: rgba(250, 185, 171, 1);
+  border-radius: 12rpx;
+  display: flex;
+  align-items: center;
+  font-size: 20rpx;
+}

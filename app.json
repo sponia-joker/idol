@@ -1,11 +1,14 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/payment/payment",
+    "pages/poster/poster",
     "pages/personCenter/personCenter",
+    "pages/guild/guild",
+    "pages/notice/notice",
+    "pages/contribution/contribution",
+    "pages/payment/payment",
     "pages/flowerGod/flowerGod",
     "pages/rules/rules",
-    "pages/guild/guild",
     "pages/launch/launch"
   ],
   "window": {

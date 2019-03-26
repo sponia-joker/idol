@@ -2,14 +2,14 @@
 <view class='container'>
   <view class='navbar'>
     <view class='tab-title'>
-      <view class='tab-title-item tab-title-lastweek'>上周</view>
-      <view class='tab-title-item tab-title-week tab-title-default'>本周</view>
-      <view class='tab-title-item tab-title-lastmonth'>上月</view>
-      <view class='tab-title-item tab-title-month'>本月</view>
+      <view class="tab-title-item {{currentTab==0?'title-item-active':''}}" data-current="0" bindtap="clickTab">上周</view>
+      <view class="tab-title-item {{currentTab==1?'title-item-active':''}}" data-current="1" bindtap="clickTab">本周</view>
+      <view class="tab-title-item {{currentTab==2?'title-item-active':''}}" data-current="2" bindtap="clickTab">上月</view>
+      <view class="tab-title-item {{currentTab==3?'title-item-active':''}}" data-current="3" bindtap="clickTab">本月</view>
     </view>
     <view class='tab-search'>
       <image src='/images/search-glyph.png' class='tab-search-icon'></image>
-      <input name="input" placeholder-class="place-holder" class="tab-search-input" focus="{{false}}" value="{{searchValue}}" confirm-type="search" bindinput="inputChange" bindfocus="inputFocus" bindconfirm="onKeywordConfirm" placeholder="请输入您喜欢的明星名字" />
+      <input placeholder-class="place-holder" class="tab-search-input" value="{{searchValue}}" confirm-type="search" bindinput="inputChange" bindfocus="inputFocus" bindconfirm="onKeywordConfirm" placeholder="请输入您喜欢的明星名字" />
     </view>
     <view class='count-down'>
       <view class=' count-down-time'>本期倒计时：02天12:12:12</view>

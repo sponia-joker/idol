@@ -1,0 +1,4 @@
+<view class='container'>
+  <canvas canvas-id="shareCanvas" style="width:350px;height:531px"></canvas>
+  <view class='download-btn' bindtap='downloadImage'>保存到相册</view>
+</view>

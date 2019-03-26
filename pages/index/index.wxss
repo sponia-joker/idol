@@ -20,6 +20,20 @@
   color: rgba(250, 185, 171, 0.40);
   text-align: center;
 }
+.title-item-active{
+  color: #FFE3AFAC;
+  position: relative;
+}
+.title-item-active::after{
+  content: '';
+  position: absolute;
+  height: 16rpx;
+  width: 110rpx;
+  background-image: url(https://i.loli.net/2019/03/24/5c96ebc66c671.png);
+  background-size: cover;
+  left: -20rpx;
+  bottom: -20rpx;
+}
 
 .tab-search {
   width: 700rpx;
